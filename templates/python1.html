@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pro Line - Bootstrap v4.1.3 Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="./static/sap200-all.min.css" />
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="./static/sap200-bootstrap.min.css" />
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="./static/sap200-tooplate-style.css" />
+    <!--
+Tooplate 2111 Pro Line
+http://www.tooplate.com/view/2111-pro-line
+-->
+  </head>
+
+  <body>
+    <!-- page header -->
+    <div class="container" id="home">
+      <div class="col-12 text-center">
+        <div class="tm-page-header">
+          <!--<i class="fas fa-4x fa-chart-bar mr-4"></i>-->
+          <h1 class="d-inline-block text-uppercase">Python Programlama Dili</h1>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="tm-nav-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#tmMainNav"
+                aria-controls="tmMainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="tmMainNav">
+                <ul class="navbar-nav mx-auto tm-navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./index.html"
+                      >Anasayfa <span class="sr-only"></span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./works.html">Projeler</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./work9.html">Python Örnekleri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Hakkımda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">İletişim</a>
+                  </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link external" href="https://www.facebook.com/templatemo">FB Page</a>
+                  </li>-->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Features -->
+    <div class="container tm-features-section" id="features">
+      <div class="row tm-features-row">
+        <section >
+          <header class="tm-feature-header">
+            <img src="./static/assets/images/pythonlogo.jpg" class="img-thumbnail" height="128" width="128">
+            <!-- class="tm-feature-h" --> <!-- h2 class'ı -->
+            <h2  style="font-family: Brush Script MT"><b><em>Spektrum Grafiği</em></b></h2>
+          </header>
+          <p>
+            Aşağıda yatay elastik tasarım ivme spektrumu elde edip çizdiren python kodları yer almaktadır. Şimdi satır satır bu kodları inceleyelim.
+          </p>
+          <p>
+           <img src="./static/assets/images/spectrum.png" class="rounded mx-auto d-block">
+           </p>
+          <p>
+            <strong>1. satır ;</strong><br>
+            Öncelikle birinci satırda spektrum grafiğini çizdirebilmemiz için gerekli olan <strong>matplotlib</strong> modülünün içerisinde yer alan <strong>pyplot</strong> fonksiyonunu projemize dahil ediyoruz ve bu metodu projemizde kullanacağımız zaman kısa bir şekilde belirtmek için <strong>plt</strong> adı ile çağırıyoruz.
+          </p>
+          <p>
+            <strong>2. satır ;</strong><br>
+            İkinci satırda ise matematiksel işlemlerde kullanmak üzere <strong>numpy</strong> modülünü <strong>np</strong> adı ile çağırıyoruz.
+          </p>
+          <p>
+            <strong>3. satır ;</strong><br>
+            3. satırda 0 ile 10. saniyeler arasında 0.01 saniye artış ile periyotları listeliyoruz (0, 0.01, 0.02, ... , 9.98, 9.99) ve bu listeyi <strong>T</strong> isimli bir değişkene atıyoruz.
+          </p>
+          <p>
+            <strong>4. ve 5. satır ;</strong><br>
+            4. ve 5. satırlarda kullanıcıdan sırasıyla <strong>kısa periyot tasarım spektral ivme katsayısı</strong> ve <strong>1.0 saniye periyot için harita spektral ivme katsayısı</strong> değerlerini alıyoruz.
+          </p>
+          <p>
+            <strong>6. satır ;</strong><br>
+            6. satırda kullanıcıdan alınan değerler ile <strong>Yatay elastik tasarım ivme spektrumu köşe periyodu (T<sub>B</sub>)</strong> değerini hesaplatıyoruz.
+          </p>
+          <p>
+            <strong>8. satır ;</strong><br>
+            8. satırda, 6. satırda hesapladığımız T<sub>B</sub> değerini kullanarak <strong>Yatay elastik tasarım ivme spektrumu köşe periyodu (T<sub>A</sub>)</strong> değerini hesaplatıyoruz.
+          </p>
+          <p>
+            <strong>9. satır ;</strong><br>
+            9. satırda <strong>Yatay elastik tasarım spektrumunda sabit yerdeğiştirme bölgesine geçiş periyodu (T<sub>L</sub>)</strong> değerini 6 saniye olarak belirliyoruz.
+          </p>
+          <p>
+            <strong>11. ve 12. satır ;</strong><br>
+            11. ve 12. satırlarda spektrum grafiğinin düşey ve yatay koordinatlarını oluşturacak değerleri depolayacağımız <strong>spectrum</strong>  ve <strong>period</strong>  isimli iki adet boş liste tanımlıyoruz.
+          </p>
+          <p>
+            <strong>14. satır ;</strong><br>
+            14. satırda 3. satırda tanımlamış olduğumuz periyot listesindeki elemanların her birini <strong>for</strong> döngüsü yardımıyla elde ediyoruz ve bu değerleri <strong>i</strong> isimli bir değişkene atıyoruz.
+          </p>
+          <p>
+            <strong>15 ve 33. satırlar bloğu ;</strong><br>
+            Burada <strong>if</strong> anahtar kelimesi ile bir koşul durumu oluşturuyoruz.<br>
+            15. satırda <strong>T</strong> isimli değişkene atadığımız periyot değerleri eğer 0 ile T<sub>A</sub> değerleri arasında ise programı 16. satırdan devam ettiriyoruz, eğer değilse programı 20. satıra indiriyoruz.<br>
+            15. satırdaki koşul durumu sağlanıyorsa; 16. satırda programa <strong>Yatay elastik tasarım spektral ivmesi </strong>değerini hesaplattırıyoruz. 17. satırda hesaplananan <strong>S<sub>ae</sub>(T)</strong> değerini <strong>spectrum</strong> listesine ekliyoruz, 18. satırda da 15. satırdaki koşulu sağlayan periyot değerlerini <strong>period</strong> listesine ekliyoruz.
+          </p>
+          <p>
+            15. satırdaki koşul durumu sağlanmadığı zaman python 20. satırdaki koşul durumuna bakacak. Burada <strong>T</strong> listesi içerisindeki periyot değerleri <strong>T<sub>A</sub></strong> ve <strong>T<sub>B</sub></strong> değerleri ile kıyaslanacak ve koşul sağlanırsa 21. satıra geçecek. Koşul sağlanmadığı zaman 25. satırdan kodları yorumlamaya devam edecek.<br>
+            20. satırda koşul sağlandığı zaman python 21. satırdaki kodları yormlayacak. Burada <strong>Yatay elastik tasarım spektral ivmesi </strong> değerini <strong>Kısa periyot tasarım spektral ivmesi </strong> değerine eşitledik. Ve sonraki satırda bir önceki koşul ifadesinde yaptığımız eklemeleri yaptık.
+          </p>
+          <p>
+            20. satırdaki koşul durumuda artık sağlanmadığı zaman Python 25. satırdaki koşul ifadesini yorumlaya geçer. Burada da <strong>T</strong> listesindeki periyotları <strong>T<sub>B</sub></strong> ve <strong>T<sub>L</sub></strong> değerleri ile kıyasladık. Bu koşolun sağlandığı durumlarda python aman python 21. satırdaki kodları yormlayacak. Burada <strong>Yatay elastik tasarım spektral ivmesi </strong> değerini hesaplayacak ve bir önceki koşul ifadelerinde olduğu gibi düşey ve yatay koordinat değerleini verecek olan <strong>spectrum</strong> ve <strong>period</strong> listelerine eklemler yapacak.
+          </p>
+          <p>Eğer yukarıdaki hiçbir koşul durumu sağlanmazsa Python <strong>else</strong> bloğundaki verileri yorumlar. Burada da yine benzer şekilde <strong>Yatay elastik tasarım spektral ivmesi </strong> değerini hesaplatıp gerekli listelere ekelmeler yaptırdık. 
+          </p>
+          <p>
+            <strong>35. satır ;</strong><br>
+            35. satırda birinci satırda projemize dahil ettiğimiz <strong>matplotlib</strong> modülünün <strong>pyplot</strong> fonksiyonunu (<strong>plt olarak</strong>) kullanarak  
+          <strong>plot</strong> metodu ile bir grafik çizdirdik. Bu grafiğin yatay ve düşey koordinatları olarak da sırasıyla <strong>period</strong> ve <strong>spectrum</strong> listelerini gösterdik. Son olarak da grafiği çizerken mavi(blue) rengi kullanmasını belirttik. 
+          </p> 
+          <p>
+            <strong>36. ve 37. satırlar ;</strong><br>
+            36. ve 37. satırlarda sırasıyla yatay (x) ve düşey (y) koordinatlarına bir isim verdik.
+          </p>
+          <p>
+            <strong>38. satır ;</strong><br>
+            Son olarak 38. satırda <strong>show</strong> metodu ile oluşturduğumuz spektrum grafiğinin ekranda görünmesini sağladık.
+          </p>
+          <p>
+            Ve programı çalıştırdığımız ve örnek olması açısından <strong>S<sub>ds</sub></strong> ve <strong>S<sub>d1</sub></strong> değerlerini sırasıyla 1.1124 ve 0.3885 olarak girdikten sonra ekranda aşağıdaki gibi <strong>yatay elastik tasarım ivme spektrumu</strong>nun çizdirilmiş olduğunu görürüz.
+          </p>
+          <p>.py uzantılı proje dosyasını indirmek isterseniz spektrum grafiğine tıklayabilirsiniz.</p>
+          <a href="./static/assets/spectrum.rar">
+          <img src="./static/assets/images/spectrumgra.png" class="rounded mx-auto d-block"></a>
+        <!--
+        <section class="col-md-12 col-sm-12 tm-feature-block">
+          <header class="tm-feature-header">
+            <i class="fas fa-5x fa-atom tm-feature-icon"></i>
+            <h3 class="tm-feature-h">Cras pretium diam ut metus</h3>
+          </header>
+          <p>
+            Phasellus tristique, sapien quis mattis pellentesque, felis turpis
+            placerat turpis, nec viverra quam nisl at velit. Pellentesque
+            iaculis convallis egestas.
+          </p>
+          <p>
+            Nunc ut elit eget velit mollis sodales. Ut non mauris ut ligula
+            mattis consectetur. Aenean augue arcu, rhoncus at nibh nec, lacinia
+            blandit nulla.
+          </p>
+        </section>-->
+      </div>
+    </div>
+
+    <!-- Activities -->
+    <div class="container" id="activities">
+      <div class="row">
+        <div class="col-12">
+          <div class="tm-parallax">
+            <!--<header class="tm-parallax-header">
+              <h2 class="">Activities</h2>
+            </header>-->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="tm-activity-block">
+            <div class="tm-activity-img-container">
+              <a href="https://www.python.org/" target="_blank">
+              <img src="./static/assets/images/p2.png" alt="Image" class="tm-activity-img" /></a>
+            </div>
+            <!--<div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Sed eu turpis nec sem lacinia
+                condimentum et a orci.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block mr-lg-0 ml-lg-auto">
+            <div class="tm-activity-img-container">
+              <img src="img/img-02.jpg" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Sed eu turpis nec sem lacinia
+                condimentum et a orci.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block">
+            <div class="tm-activity-img-container">
+              <img src="img/img-03.jpg" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Sed eu turpis nec sem lacinia
+                condimentum et a orci.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block mr-lg-0 ml-lg-auto">
+            <div class="tm-activity-img-container">
+              <img src="img/img-04.jpg" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Lorem ipsum dolor sit amet</h3>
+              <p>
+                Orci varius natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Sed eu turpis nec sem lacinia
+                condimentum et a orci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container tm-company-section" id="company">
+      <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-12 tm-company-left">
+          <div class="tm-company-about">
+            <div class="tm-company-img-container">
+              <img src="img/img-05.jpg" alt="Image" />
+            </div>
+            <div class="tm-company-about-text">
+              <header>
+                <h2 class="tm-company-about-header">Our Company</h2>
+              </header>
+              <p>
+                Phasellus fringilla convallis libero non aliquam. Morbi justo
+                lorem, varius ultricies pulvinar ac, aliquet quis ipsum.
+              </p>
+              <p class="mb-4">
+                Suspendisse aliquam pulvinar odio sed rhoncus. Cras pretium diam
+                ut metus tristique, a ultricies sapien euismod. Duis dui diam,
+                maximus ac ligula a, accumsan cursus ante.
+              </p>
+              <a href="#" class="btn tm-btn tm-float-right">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xl-9 col-lg-4 col-md-12 tm-company-right  ml-lg-auto mr-lg-0"
+        >
+          <div class="tm-company-right-inner">
+            <ul class="nav nav-tabs" id="tmCompanyTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-nav-link-border-right active"
+                  id="vision-tab"
+                  data-toggle="tab"
+                  href="#vision"
+                  role="tab"
+                  aria-controls="vision"
+                  aria-selected="true"
+                  >Vision</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-no-border-right"
+                  id="mission-tab"
+                  data-toggle="tab"
+                  href="#mission"
+                  role="tab"
+                  aria-controls="mission"
+                  aria-selected="false"
+                  >Mission</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="tmTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="vision"
+                role="tabpanel"
+                aria-labelledby="vision-tab"
+              >
+                <p>
+                  Phasellus suscipit sapien magna, vel dictum lorem fringilla.
+                </p>
+                <p>
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra.
+                </p>
+                <p>
+                  Nulla ornare ligula nibh, sit amet tristique magna efficitur
+                  eu.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="mission"
+                role="tabpanel"
+                aria-labelledby="mission-tab"
+              >
+                <p>
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra.
+                </p>
+                <p>
+                  Nulla ornare ligula nibh, sit amet tristique magna efficitur
+                  eu.
+                </p>
+                <p>
+                  Phasellus suscipit sapien magna, vel dictum lorem fringilla.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <!-- Contact -->
+    <!--<section class="container tm-contact-section" id="contact">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 col-md-12 tm-contact-left">
+          <div class="tm-contact-form-container ml-auto mr-0">
+            <header>
+              <h2 class="tm-contact-header">Contact Us</h2>
+            </header>
+            <form action="index.html" class="tm-contact-form" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="contact_name"
+                  name="contact_name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="contact_email"
+                  name="contact_email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  rows="5"
+                  id="contact_message"
+                  name="contact_message"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="tm-text-right">
+                <button type="submit" class="btn tm-btn tm-btn-big">
+                  Send It
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6 col-md-12 tm-contact-right">
+          <div class="tm-contact-figure-block">
+            <figure class="d-inline-block">
+              <img src="img/img-06.jpg" alt="Image" class="img-fluid" />
+              <figcaption class="tm-contact-figcaption">
+                Nulla arcu tortor, mattis in diam eget, hendrerit vulputate
+                ligula. Nam non purus consequat, dictum lectus lobortis, laoreet
+                nibh. Cras vitae facilisis felis. Phasellus tristique.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container tm-footer">
+      <div class="row tm-footer-row">
+        <p class="col-md-10 col-sm-12 mb-0">
+          Copyright &copy; 2018 Company Name - Design:
+          <a rel="nofollow" href="https://www.facebook.com/tooplate" class="tm-footer-link">Tooplate</a>
+        </p>
+        <div class="col-md-2 col-sm-12 scrolltop">
+          <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+        </div>
+      </div>
+    </footer>-->
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Single Page Nav plugin works with this version of jQuery -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      /**
+       * detect IE
+       * returns version of IE or false, if browser is not Internet Explorer
+       */
+      function detectIE() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0) {
+          // IE 10 or older => return version number
+          return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)), 10);
+        }
+
+        var trident = ua.indexOf("Trident/");
+        if (trident > 0) {
+          // IE 11 => return version number
+          var rv = ua.indexOf("rv:");
+          return parseInt(ua.substring(rv + 3, ua.indexOf(".", rv)), 10);
+        }
+
+        // var edge = ua.indexOf('Edge/');
+        // if (edge > 0) {
+        //     // Edge (IE 12+) => return version number
+        //     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        // }
+
+        // other browser
+        return false;
+      }
+
+      function setVideoHeight() {
+        const videoRatio = 1920 / 1080;
+        const minVideoWidth = 400 * videoRatio;
+        let secWidth = 0,
+          secHeight = 0;
+
+        secWidth = videoSec.width();
+        secHeight = videoSec.height();
+
+        secHeight = secWidth / 2.13;
+
+        if (secHeight > 600) {
+          secHeight = 600;
+        } else if (secHeight < 400) {
+          secHeight = 400;
+        }
+
+        if (secWidth > minVideoWidth) {
+          $("video").width(secWidth);
+        } else {
+          $("video").width(minVideoWidth);
+        }
+
+        videoSec.height(secHeight);
+      }
+
+      // Parallax function
+      // https://codepen.io/roborich/pen/wpAsm
+      var background_image_parallax = function($object, multiplier) {
+        multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({ "background-attatchment": "fixed" });
+        $(window).scroll(function() {
+          var from_top = $doc.scrollTop(),
+            bg_css = "center " + multiplier * from_top + "px";
+          $object.css({ "background-position": bg_css });
+        });
+      };
+
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $(".scrolltop:hidden")
+            .stop(true, true)
+            .fadeIn();
+        } else {
+          $(".scrolltop")
+            .stop(true, true)
+            .fadeOut();
+        }
+
+        // Make sticky header
+        if ($(this).scrollTop() > 158) {
+          $(".tm-nav-section").addClass("sticky");
+        } else {
+          $(".tm-nav-section").removeClass("sticky");
+        }
+      });
+
+      let videoSec;
+
+      $(function() {
+        if (detectIE()) {
+          alert(
+            "Please use the latest version of Edge, Chrome, or Firefox for best browsing experience."
+          );
+        }
+
+        const mainNav = $("#tmMainNav");
+        mainNav.singlePageNav({
+          filter: ":not(.external)",
+          offset: $(".tm-nav-section").outerHeight(),
+          updateHash: true,
+          beforeStart: function() {
+            mainNav.removeClass("show");
+          }
+        });
+
+        videoSec = $("#tmVideoSection");
+
+        // Adjust height of video when window is resized
+        $(window).resize(function() {
+          setVideoHeight();
+        });
+
+        setVideoHeight();
+
+        $(window).on("load scroll resize", function() {
+          var scrolled = $(this).scrollTop();
+          var vidHeight = $("#hero-vid").height();
+          var offset = vidHeight * 0.6;
+          var scrollSpeed = 0.25;
+          var windowWidth = window.innerWidth;
+
+          if (windowWidth < 768) {
+            scrollSpeed = 0.1;
+            offset = vidHeight * 0.5;
+          }
+
+          $("#hero-vid").css(
+            "transform",
+            "translate3d(-50%, " + -(offset + scrolled * scrollSpeed) + "px, 0)"
+          ); // parallax (25% scroll rate)
+        });
+
+        // Parallax image background
+        background_image_parallax($(".tm-parallax"), 0.4);
+
+        // Back to top
+        $(".scroll").click(function() {
+          $("html,body").animate(
+            { scrollTop: $("#home").offset().top },
+            "1000"
+          );
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
